@@ -180,7 +180,8 @@ app.use('/users',users);
 app.use('/',pages);
 
 //start the server
-var port=3000
+
+const port = process.env.PORT || 3000 ;
 app.listen(port,function(){
     console.log('server started on port '+ port);
 });
